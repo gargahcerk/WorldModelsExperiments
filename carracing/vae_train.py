@@ -40,7 +40,7 @@ def count_length_of_filelist(filelist):
       print("loading file", i)
   return  total_length
 
-def create_dataset(filelist, N=10000, M=1000): # N is 10000 episodes, M is number of timesteps
+def create_dataset(filelist, N=5000, M=1000): # N is 10000 episodes, M is number of timesteps
   data = np.zeros((M*N, 64, 64, 3), dtype=np.uint8)
   idx = 0
   for i in range(N):
